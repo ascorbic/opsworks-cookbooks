@@ -34,7 +34,7 @@
 
 <% if node[:deploy][@application_name][:ssl_support] -%>
   RewriteCond %{REQUEST_METHOD} =GET
-  RewriteRule ^/(.*)         https://<%= @params[:server_name] %>/$1 [L,R]
+  RewriteRule ^/(.*)         https://%{HTTP_HOST}/$1 [L,R]
 <% end -%>
 
   <% if node[:apache][:version] == '2.2' -%>
