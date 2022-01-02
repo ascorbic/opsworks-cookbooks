@@ -1,0 +1,1 @@
+depends 'acme', '= 2.0.0'
