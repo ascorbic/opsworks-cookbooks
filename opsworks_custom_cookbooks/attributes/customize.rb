@@ -1,0 +1,1 @@
+normal[:opsworks_custom_cookbooks][:berkshelf_version] = '3.2.0'
